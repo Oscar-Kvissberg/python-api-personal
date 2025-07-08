@@ -7,6 +7,10 @@ from .logic import GothenburgPortDataCollector
 router = APIRouter(prefix="/api", tags=["Göteborgs Hamn"])
 collector = GothenburgPortDataCollector()
 
+"""
+    API endpoints for the Göteborgs Hamn data collector
+"""
+
 @router.get("/port-data")
 async def get_port_data():
     data = collector.collect_all_data()
