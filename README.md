@@ -9,7 +9,7 @@ cd python-scripts
 pip install -r requirements.txt
 ```
 
-## Användning
+## Användning uvicorn main:app --reload
 
 ### Lokal utveckling
 ```bash
