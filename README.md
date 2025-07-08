@@ -47,6 +47,10 @@ Scriptet kan användas på två sätt:
 
 För Vercel deployment, rekommenderas att Python backend körs separat (t.ex. på Railway, Heroku, eller AWS).
 
+## Azure Deployment
+
+Detta projekt är konfigurerat för automatisk deployment till Azure Web Apps via GitHub Actions.
+
 ## Framtida Projekt Struktur
 
 För att lägga till fler projekt på din sida, kan du skapa separata mappar:
