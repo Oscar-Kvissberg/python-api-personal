@@ -4,6 +4,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime
 from api.Gbg_API.routes import router as gbg_router
+from api.Hello.routes import router as hello_router
 
 app = FastAPI(
     title="Multi-API Server",
@@ -19,7 +20,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+#lägger till alla routs frpn gbg apiet... 
 app.include_router(gbg_router)
+app.include_router(hello_router)
 
 @app.get("/")
 async def root():
