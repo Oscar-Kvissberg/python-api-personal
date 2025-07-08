@@ -3,7 +3,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime
-from api.gbg.routes import router as gbg_router
+from api.Gbg_API.routes import router as gbg_router
 
 app = FastAPI(
     title="Multi-API Server",
